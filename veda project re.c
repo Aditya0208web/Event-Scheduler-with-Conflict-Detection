@@ -4,29 +4,26 @@
 struct hash{
 	int n;	
 }time[m];
-int size;
+int size = 24;
 void create_time(){
 	int i;
-	printf("Enter the size of time:");
-	scanf("%d",&size);
 	int time[size];
-	printf("Enter the time:");
 	for( i=0;i<size;i++){
-		scanf("%d",&time[i]);
+		time[i]=0;
 	}
 }
-void collision(int size,struct hash time[]){
-	int event, slot;
+void collision(int size,struct hash time[], int event){
 	int i;
-	printf("Enter the event and slot");
-	scanf("%d %d",&event,&slot);
+	int slot=event%m;
 	if(time[slot].n!=0){
 		printf("Collision Occured\n");
 		for(i=0;i<size;i++){
 			slot=(event+i)%m;
 			if(time[slot].n==0){
 				time[slot].n=event;
+					printf("Due to some another event is shedule at that time, So the Next event is sheduled at %d\n",slot);
 				break;
+			
 			}
 		}
 		
@@ -39,34 +36,37 @@ void insert(){
 	slot=event%m;
 	if(time[slot].n==0){
 		time[slot].n=event;
+		printf("Event is sheduled at %d",slot);
 	}else{
-		collision(size,time);
+		collision(size,time, event);
 	}
 	
 }
-void display(){
+void display(struct hash time[]){
 	int i;
 	for(i=0;i<size;i++){
-		printf("%d\t",time[i].n);
+		if(time[i].n!=0){
+			printf("Slot %d : Event %d\n",i,time[i].n);
+		}
+		
 	}
 	printf("\n");
 }
 int main(){
 	int choice;
 	create_time();
+	printf("WELCOME TO RISING MANAGEMENT TEAMS\n");
 	while(1){
-		printf("****MENU****\n");
-		printf("1.insert\n2.collision\n3.display\n4.exit\n");
+		printf("\n****SERVICES****\n");
+		printf("1.insert\n2.display\n3.exit\n");
 		printf("Enter the choice:");
 		scanf("%d",&choice);
 		switch(choice){
 			case 1: insert();
 			break;
-			case 2: collision(size,time);
+			case 2: display( time);
 			break;
-			case 3: display();
-			break;
-			case 4: exit(0);
+			case 3: exit(0);
 			break;
 			default: printf("Wrong Choice\n");
 		}
