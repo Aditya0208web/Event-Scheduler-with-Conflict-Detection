@@ -37,6 +37,6 @@ An efficient scheduling system built using C programming that utilizes a hash ta
 
 The duo worked closely on logic development, testing, and implementation to ensure accurate and optimized scheduling.
 
-##🖥️ OUTPUT :
+## 🖥️ OUTPUT:
 
 ![image](https://github.com/user-attachments/assets/712f1763-f1fb-4593-8a8a-f592a2f0da50)
