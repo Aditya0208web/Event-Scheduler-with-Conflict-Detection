@@ -1,4 +1,4 @@
-📅 Event Scheduling using Hash Table with Collision Handling in C
+#🌐🔧 SMART EVENT SCHEDULER USING HASH TABLES WITH LINEAR PROBING IN C📅
 
 An efficient scheduling system built using C programming that utilizes a hash table to allocate events to time slots. The system handles scheduling conflicts using linear probing, ensuring no two events overwrite each other.
 
@@ -62,7 +62,8 @@ The duo worked closely on logic development, testing, and implementation to ensu
 
 
 
-OUTPUT
+OUTPUT 🖥️:
+
 ![image](https://github.com/user-attachments/assets/712f1763-f1fb-4593-8a8a-f592a2f0da50)
 
 
