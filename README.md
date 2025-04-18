@@ -1,4 +1,5 @@
 📅 Event Scheduling using Hash Table with Collision Handling in C
+
 An efficient scheduling system built using C programming that utilizes a hash table to allocate events to time slots. The system handles scheduling conflicts using linear probing, ensuring no two events overwrite each other.
 
 🎯 Objective
