@@ -3,6 +3,7 @@
 An efficient scheduling system built using C programming that utilizes a hash table to allocate events to time slots. The system handles scheduling conflicts using linear probing, ensuring no two events overwrite each other.
 
 
+
 🛠 Tools & Technologies
 
 Language: C
@@ -10,6 +11,8 @@ Language: C
 Data Structure: Hash Table
 
 Collision Resolution Technique: Linear Probing
+
+
 
 💡 Code Explanation
 
@@ -27,6 +30,8 @@ collision()	=> If the hashed slot is occupied, finds the next empty slot using l
 display() =>	Displays all scheduled events with their respective slots.
 
 main() =>	Provides a user menu to insert events, view schedule, or exit.
+
+
 
 🌟 Features (Current Phase)
 
@@ -54,6 +59,7 @@ Om Prakhar
 Aditya Shrivastava	
 
 The duo worked closely on logic development, testing, and implementation to ensure accurate and optimized scheduling.
+
 
 
 OUTPUT
