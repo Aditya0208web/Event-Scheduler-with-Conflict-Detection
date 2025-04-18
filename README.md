@@ -41,7 +41,7 @@ Predefined fixed-size hash table for simplicity and clarity
 
 🤝 Team Collaboration
 
-Om Prakhar	
+Om Prakhar	and
 Aditya Shrivastava	
 The duo worked closely on logic development, testing, and implementation to ensure accurate and optimized scheduling.
 
